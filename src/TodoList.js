@@ -1,4 +1,4 @@
-/* eslint-disable no-plusplus */
+  /* eslint-disable no-plusplus */
 let todos = JSON.parse(localStorage.getItem('todo-list')) || [];
 
 const form = document.querySelector('.form-input');
@@ -108,3 +108,5 @@ form.addEventListener('submit', (e) => {
     deleteFunc();
   }
 });
+
+module.exports = './TodoList.js';
