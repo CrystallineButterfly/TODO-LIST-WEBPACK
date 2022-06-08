@@ -1,56 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" />
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <title>Todo list</title>
-    <script defer src="bundle.js"></script>
-  </head>
-  <body>
-    <div class="card">
-      <div class="header">
-        <div class="title">
-          <h1>Today's todo</h1>
-        </div>
-        <div class="refresh">
-          <button class="refresh-btn">
-            <ion-icon name="sync-outline"></ion-icon>
-          </button>
-        </div>
-      </div>
-      <div class="task-list">
-        <form class="form-input">
-          <input
-            type="text"
-            id="todo"
-            placeholder="Today's to do"
-            aria-label="todays-todo-mission"
-          />
-          <button class="send"><ion-icon name="send"></ion-icon></button>
-        </form>
-      </div>
-
-      <div class="task-ul"></div>
-      <div class="clear-all">
-        <button class="clear-completed">clear completed tasks</button>
-      </div>
-    </div>
-    <script src="./index.js"></script>
-  </body>
-</html>
+<head><script defer src="bundle.js"></script></head>Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Module not found: Error: Can't resolve 'C:\Users\User\OneDrive\Desktop\TO-DO-LIST-WEBPACK\TODO-LIST-WEBPACK\src\template.html' in 'C:\Users\User\OneDrive\Desktop\  TO-DO-LIST-WEBPACK\TODO-LIST-WEBPACK'
+  ModuleNotFoundError: Module not found: Error: Can't resolve 'C:\Users\User\OneDrive\Desktop\TO-DO-LIST-WEBPACK\TODO-LIST-WEBPACK\src\template.html' in 'C:\Users\U  ser\OneDrive\Desktop\TO-DO-LIST-WEBPACK\TODO-LIST-WEBPACK'
+      at C:\Users\User\OneDrive\Desktop\TO-DO-LIST-WEBPACK\TODO-LIST-WEBPACK\node_modules\webpack\lib\Compilation.js:2016:28
+      at C:\Users\User\OneDrive\Desktop\TO-DO-LIST-WEBPACK\TODO-LIST-WEBPACK\node_modules\webpack\lib\NormalModuleFactory.js:798:13
+      at eval (eval at create (C:\Users\User\OneDrive\Desktop\TO-DO-LIST-WEBPACK\TODO-LIST-WEBPACK\node_modules\tapable\lib\HookCodeFactory.js:33:10), <anonymous>:1  0:1)
+      at C:\Users\User\OneDrive\Desktop\TO-DO-LIST-WEBPACK\TODO-LIST-WEBPACK\node_modules\webpack\lib\NormalModuleFactory.js:270:22
+      at eval (eval at create (C:\Users\User\OneDrive\Desktop\TO-DO-LIST-WEBPACK\TODO-LIST-WEBPACK\node_modules\tapable\lib\HookCodeFactory.js:33:10), <anonymous>:9  :1)
+      at C:\Users\User\OneDrive\Desktop\TO-DO-LIST-WEBPACK\TODO-LIST-WEBPACK\node_modules\webpack\lib\NormalModuleFactory.js:434:22
+      at C:\Users\User\OneDrive\Desktop\TO-DO-LIST-WEBPACK\TODO-LIST-WEBPACK\node_modules\webpack\lib\NormalModuleFactory.js:116:11
+      at C:\Users\User\OneDrive\Desktop\TO-DO-LIST-WEBPACK\TODO-LIST-WEBPACK\node_modules\webpack\lib\NormalModuleFactory.js:670:25
+      at C:\Users\User\OneDrive\Desktop\TO-DO-LIST-WEBPACK\TODO-LIST-WEBPACK\node_modules\webpack\lib\NormalModuleFactory.js:855:8
+      at C:\Users\User\OneDrive\Desktop\TO-DO-LIST-WEBPACK\TODO-LIST-WEBPACK\node_modules\webpack\lib\NormalModuleFactory.js:975:5
+  
+  - Compilation.js:2016 
+    [TODO-LIST-WEBPACK]/[webpack]/lib/Compilation.js:2016:28
+  
+  - NormalModuleFactory.js:798 
+    [TODO-LIST-WEBPACK]/[webpack]/lib/NormalModuleFactory.js:798:13
+  
+  
+  - NormalModuleFactory.js:270 
+    [TODO-LIST-WEBPACK]/[webpack]/lib/NormalModuleFactory.js:270:22
+  
+  
+  - NormalModuleFactory.js:434 
+    [TODO-LIST-WEBPACK]/[webpack]/lib/NormalModuleFactory.js:434:22
+  
+  - NormalModuleFactory.js:116 
+    [TODO-LIST-WEBPACK]/[webpack]/lib/NormalModuleFactory.js:116:11
+  
+  - NormalModuleFactory.js:670 
+    [TODO-LIST-WEBPACK]/[webpack]/lib/NormalModuleFactory.js:670:25
+  
+  - NormalModuleFactory.js:855 
+    [TODO-LIST-WEBPACK]/[webpack]/lib/NormalModuleFactory.js:855:8
+  
+  - NormalModuleFactory.js:975 
+    [TODO-LIST-WEBPACK]/[webpack]/lib/NormalModuleFactory.js:975:5
+  
+  - child-compiler.js:169 
+    [TODO-LIST-WEBPACK]/[html-webpack-plugin]/lib/child-compiler.js:169:18
+  
+  - Compiler.js:551 finalCallback
+    [TODO-LIST-WEBPACK]/[webpack]/lib/Compiler.js:551:5
+  
+  - Compiler.js:577 
+    [TODO-LIST-WEBPACK]/[webpack]/lib/Compiler.js:577:11
+  
+  - Compiler.js:1196 
+    [TODO-LIST-WEBPACK]/[webpack]/lib/Compiler.js:1196:17
+  
+  
+  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
+    [TODO-LIST-WEBPACK]/[tapable]/lib/Hook.js:18:14
+  
+  - Compiler.js:1192 
+    [TODO-LIST-WEBPACK]/[webpack]/lib/Compiler.js:1192:33
+  
+  - Compilation.js:2787 finalCallback
+    [TODO-LIST-WEBPACK]/[webpack]/lib/Compilation.js:2787:11
+  
+  - Compilation.js:3092 
+    [TODO-LIST-WEBPACK]/[webpack]/lib/Compilation.js:3092:11
+  
+  
+</pre>
